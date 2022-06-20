@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/stringOneText"
+        android:layout_width="100dp"
+        android:layout_height="50sp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/text_box"
+        android:gravity="center"
+        android:text="String One"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stringTwoText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/text_box"
+        android:gravity="center"
+        android:text="String Two"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stringOneText" />
+
+    <EditText
+        android:id="@+id/stringOneInput"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:background="@drawable/input_textbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/stringTwoInput"
+        android:layout_width="150dp"
+        android:layout_height="50sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:background="@drawable/input_textbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stringOneInput" />
+
+    <Button
+        android:id="@+id/addStringButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginEnd="106dp"
+        android:text="Add Strings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stringTwoText" />
+
+    <Button
+        android:id="@+id/cmpStringButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="106dp"
+        android:text="Compare String"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addStringButton" />
+
+    <Button
+        android:id="@+id/vowelButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="106dp"
+        android:text="Count vowels"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cmpStringButton" />
+
+    <TextView
+        android:id="@+id/outputTextBox"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="35dp"
+        android:gravity="center"
+        android:text="Your text will appear here"
+        app:layout_constraintBottom_toTopOf="@+id/addStringButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stringTwoText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
